@@ -1,4 +1,6 @@
 LePtiCoin::Application.routes.draw do
+  resources :whats
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

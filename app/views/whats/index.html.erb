@@ -1,0 +1,23 @@
+<h1>Listing whats</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @whats.each do |what| %>
+  <tr>
+    <td><%= what.name %></td>
+    <td><%= link_to 'Show', what %></td>
+    <td><%= link_to 'Edit', edit_what_path(what) %></td>
+    <td><%= link_to 'Destroy', what, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New What', new_what_path %>
